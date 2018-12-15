@@ -3,4 +3,4 @@
 	url = https://github.com/Nanolx/android_external_UnifiedNlpApi.git
 [submodule "extern/MicroGUiTools"]
 	path = extern/MicroGUiTools
-	url = https://github.com/microg/android_external_MicroGUiTools.git
+	url = https://github.com/Nanolx/android_external_MicroGUiTools.git
