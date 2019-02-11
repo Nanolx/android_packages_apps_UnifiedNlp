@@ -28,15 +28,25 @@
     <uses-permission
         android:name="android.permission.INSTALL_LOCATION_PROVIDER"
         tools:ignore="ProtectedPermissions"/>
+
     <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="org.microg.permission.FORCE_COARSE_LOCATION"/>
 
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.ALLOCATE_AGGRESSIVE" />
+
     <uses-permission android:name="com.android.settings.INJECT_SETTINGS"/>
+    <uses-permission android:permission="android.permission.WRITE_SECURE_SETTINGS"/>
+
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
 
     <application>
-        <uses-library android:name="com.android.location.provider"/>
+        <uses-library android:name="com.android.location.provider" android:required="false"/>
 
         <!-- Gingerbread / Ice Cream Sandwich -->
         <service
@@ -109,12 +119,14 @@
 
         <receiver android:name="org.microg.nlp.PackageReceiver">
             <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
                 <action android:name="android.intent.action.PACKAGE_CHANGED"/>
-                <action android:name="android.intent.action.PACKAGE_UPGRADED"/>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
                 <action android:name="android.intent.action.PACKAGE_REMOVED"/>
                 <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_UPGRADED"/>
                 <action android:name="android.intent.action.PACKAGE_RESTARTED"/>
-
                 <data android:scheme="package"/>
             </intent-filter>
         </receiver>
