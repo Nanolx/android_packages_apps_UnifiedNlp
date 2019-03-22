@@ -26,7 +26,7 @@ import static android.os.Build.VERSION.SDK_INT;
 import static android.os.Build.VERSION_CODES.JELLY_BEAN;
 import static android.os.Build.VERSION_CODES.JELLY_BEAN_MR1;
 import static android.os.Build.VERSION_CODES.KITKAT;
-import static android.os.Build.VERSION_CODES.M;
+import static android.os.Build.VERSION_CODES.P;
 
 public class NlpOsCompatChecks implements SelfCheckGroup {
 
