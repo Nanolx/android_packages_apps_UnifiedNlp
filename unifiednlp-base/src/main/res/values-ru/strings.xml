@@ -29,6 +29,10 @@
     <string name="configure_geocoder_backends_summary">
         Включить, отключить и настроить программы для поиска адреса.
     </string>
+    <string name="location">Местоположение</string>
+    <string name="test_location">Тест местоположения</string>
+    <string name="test_location_summary">Протестировать Backend-программы поиска адреса и определения местоположения</string>
+
     <string name="perm_force_coarse_location_label">определение приблизительного местоположения</string>
     <string name="perm_force_coarse_location_desc">Принудительно использовать сеть для определения местоположения</string>
 

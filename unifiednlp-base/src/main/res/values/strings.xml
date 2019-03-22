@@ -29,6 +29,10 @@
     <string name="configure_geocoder_backends_summary">
         Enable, disable and configure backends for address lookup.
     </string>
+    <string name="location">Location</string>
+    <string name="test_location">Test location</string>
+    <string name="test_location_summary">Test address lookup and location backends</string>
+
     <string name="perm_force_coarse_location_label">enforce approximate location</string>
     <string name="perm_force_coarse_location_desc">Force the network-based location provider to report a certain location</string>
 
