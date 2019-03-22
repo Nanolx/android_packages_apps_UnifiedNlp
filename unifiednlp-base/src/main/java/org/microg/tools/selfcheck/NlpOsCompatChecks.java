@@ -47,7 +47,7 @@ public class NlpOsCompatChecks implements SelfCheckGroup {
     }
 
     private boolean checkSystemIsSupported(Context context, ResultCollector collector) {
-        boolean isSupported = (SDK_INT >= KITKAT && SDK_INT <= M);
+        boolean isSupported = (SDK_INT >= KITKAT && SDK_INT <= P);
         collector.addResult(context.getString(R.string.self_check_name_system_supported),
                 isSupported ? Result.Positive : Result.Unknown, context.getString(R.string.self_check_resolution_system_supported));
         return isSupported;
