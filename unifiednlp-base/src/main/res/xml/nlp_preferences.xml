@@ -28,4 +28,14 @@
             android:title="@string/configure_backends"
             android:summary="@string/configure_geocoder_backends_summary" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="@string/location">
+        <org.microg.tools.ui.TintIconPreference
+            android:icon="@drawable/location_marker"
+            android:summary="@string/test_location_summary"
+            android:title="@string/test_location">
+            <intent
+                android:targetClass="org.microg.gms.ui.PlacePickerActivity"
+                android:targetPackage="com.google.android.gms"/>
+        </org.microg.tools.ui.TintIconPreference>
+    </PreferenceCategory>
 </PreferenceScreen>
