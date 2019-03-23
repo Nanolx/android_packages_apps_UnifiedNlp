@@ -30,7 +30,6 @@
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/location">
         <org.microg.tools.ui.TintIconPreference
-            android:icon="@drawable/location_marker"
             android:summary="@string/test_location_summary"
             android:title="@string/test_location">
             <intent
